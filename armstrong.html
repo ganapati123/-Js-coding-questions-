@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMSTRONG</title>
+</head>
+<body>
+<!-- An Armstrong number is a number whose sum of cubes of all the digits in it and then result will be equal to itself. -->
+ <script>
+let number = prompt("Enter positive number")
+let noOfDigits = number.length
+let sum = 0
+let temp = number
+while(temp>0){
+  rem = temp%10
+  sum = sum+rem**noOfDigits
+  temp=parseInt(temp/10);
+}
+if(sum==number){
+  document.write("Given number is Armstrong Number")
+}
+else{ 
+  document.write("Not an ArmStrong number")
+}	
+
+    </script>
+</body>
+</html>

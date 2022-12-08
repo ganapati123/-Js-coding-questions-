@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+<body>
+    <h1>JS-DATE-TIME</h1>
+    <time id="dt24"></time>
+    <h1>JS-DATE-TIME</h1>
+    <time id="dt12"></time>
+    <script>
+        // function myfun(){
+        //     var d = new Date()
+        //     year = d.getFullYear()
+        //     month = d.getMonth()+1
+        //     date = d.getDate()
+        //     h =d.getHours()
+        //     m=d.getMinutes()
+        //     s=d.getSeconds()
+        //     ltime = d.toLocaleTimeString()
+        //     dateDetails =`${date}/${month}/${year}`
+        //     document.getElementById('dt24').innerHTML=`${dateDetails}[${h}:${m}:${s}]`
+        //     document.getElementById('dt12').innerHTML=`${dateDetails}[${ltime}]`
+
+        // }
+        //  setInterval('myfun()',1000)
+
+        window.setInterval(()=>{
+            var d = new Date()
+            year = d.getFullYear()
+            month = d.getMonth()+1
+            date = d.getDate()
+            h =d.getHours()
+            m=d.getMinutes()
+            s=d.getSeconds()
+            ltime = d.toLocaleTimeString()
+            dateDetails =`${date}/${month}/${year}`
+            document.getElementById('dt24').innerHTML=`${dateDetails}[${h}:${m}:${s}]`
+            document.getElementById('dt12').innerHTML=`${dateDetails}[${ltime}]`
+        },1000)
+    </script>
+</body>
+</html>
